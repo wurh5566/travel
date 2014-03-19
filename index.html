@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>index</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="css/style.css"/>
+        <script src="js/plugin/avalon.js"></script>
+        <script src="js/plugin//json2.js"></script>
+        <script src="js/component//route.js"></script>
+    </head>
+    <body ms-controller="test1">
+        <div class="wrapper">
+            <h3>高级大气国际化的avalon.js页面</h3>
+            <div>by  司徒正美</div>
+            <ul>
+                <li><a href="#/">default</a></li>
+                <li><a href="#/aaa">aaa</a></li>
+                <li><a href="#/bbb">bbb</a></li>
+                <li><a href="#/ccc">ccc</a></li>
+                <li><a href="#/ddd/222">ddd</a></li>
+                <li><a href="#/eee">eee</a></li>
+            </ul>
+            <div style="color:red">{{currPath}}</div>
+            <div style="height: 600px;width:400px;" ms-include-src="currPath.replace(/\/\d+/,'')">
+                 这里用于加载子页面
+            </div>
+            <p id="eee">会定位到这里</p>-->
+        </div>
+    </body>
+</html>
